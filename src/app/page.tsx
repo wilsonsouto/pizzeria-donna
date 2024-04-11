@@ -1,5 +1,10 @@
-import { BgImageContainer } from "@/components/Layout";
+import {
+  BgImageContainer,
+  GridChild,
+  GridContainer,
+} from "@/components/Layout";
 import { Logo } from "@/components/Elements";
+import { MdTextPosition } from "@/components/Enums";
 
 export default function Home() {
   return (
@@ -9,6 +14,18 @@ export default function Home() {
           <Logo span1="Pizzeria" span2="Donna" />
         </BgImageContainer>
       </header>
+      <main>
+        <GridContainer>
+          <GridChild position={MdTextPosition.center}>
+            <h2>United just for one reason</h2>
+            <p>
+              We are the first pizzeria to focus on this kind of service.
+              Contributing to a better experience, security, comfort and
+              quality. To place an order, simply use our chatbot!
+            </p>
+          </GridChild>
+        </GridContainer>
+      </main>
     </>
   );
 }
