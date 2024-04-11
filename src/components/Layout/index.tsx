@@ -1,3 +1,3 @@
-import BackgroundContainer from "./BackgroundContainer";
+import BgImageContainer from "./BgImageContainer";
 
-export { BackgroundContainer };
+export { BgImageContainer };
