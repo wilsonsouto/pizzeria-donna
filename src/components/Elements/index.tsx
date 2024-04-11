@@ -1,5 +1,5 @@
-import Logo from "./Logo";
+import BrandLogo from "./BrandLogo";
 import Heading from "./Heading";
 import Paragraph from "./Paragraph";
 
-export { Logo, Heading, Paragraph };
+export { BrandLogo, Heading, Paragraph };
