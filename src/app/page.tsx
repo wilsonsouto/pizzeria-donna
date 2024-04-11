@@ -3,7 +3,12 @@ import {
   GridChild,
   GridContainer,
 } from "@/components/Layout";
-import { BrandLogo, Heading, Paragraph } from "@/components/Elements";
+import {
+  BrandLogo,
+  Heading,
+  Paragraph,
+  PizzaImageDisplay,
+} from "@/components/Elements";
 import { MdTextPosition } from "@/components/Enums";
 
 export default function Home() {
@@ -24,6 +29,19 @@ export default function Home() {
               quality. To place an order, simply use our chatbot!"
             />
           </GridChild>
+          <div className="grid place-items-center gap-4 md:grid-cols-2">
+            <GridChild position={MdTextPosition.left}>
+              <Heading text="Don't be afraid, the hungry doens't have to wait" />
+              <Paragraph text="✓ First quality ingredients" />
+              <Paragraph text="✓ Inspired recipes" />
+              <Paragraph text="✓ Love in every detail" />
+              <Paragraph text="✓ Our commitment is to always be present and meet your needs" />
+            </GridChild>
+            <PizzaImageDisplay
+              src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Person making dough pizza"
+            />
+          </div>
         </GridContainer>
       </main>
     </>
