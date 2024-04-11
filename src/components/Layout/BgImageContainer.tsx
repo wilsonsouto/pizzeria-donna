@@ -1,8 +1,11 @@
 import React from "react";
+import { JustifyContent, AlignItems } from "../Enums";
 
 interface BgImageContainerProps {
   children: React.ReactNode;
   url: string;
+  justify: JustifyContent;
+  align: AlignItems;
 }
 
 export default function BgImageContainer(props: BgImageContainerProps) {
@@ -15,7 +18,7 @@ export default function BgImageContainer(props: BgImageContainerProps) {
     >
       <div className="relative h-full w-full bg-[rgba(0,0,0,0.7)]">
         <div
-          className={`flex h-full w-full flex-col items-center justify-center px-8 py-20 text-center`}
+          className={`flex h-full w-full flex-col px-8 py-20 ${props.justify} ${props.align}`}
         >
           {props.children}
         </div>
