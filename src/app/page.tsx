@@ -21,7 +21,9 @@ import {
   MdTextPosition,
   Padding,
   TextColor,
+  TextPosition,
 } from "@/components/Enums";
+import { Fit, Special, Sweet, Tradicional } from "@/components/Menu";
 
 export default function Home() {
   const [showMenu, setShowMenu] = useState("Traditional");
@@ -44,7 +46,7 @@ export default function Home() {
       </header>
       <main>
         <GridContainer padding={Padding["px-8"]}>
-          <GridChild mdSize={MdSize.w12v12} position={MdTextPosition.center}>
+          <GridChild mdSize={MdSize.w12v12} position={TextPosition.center}>
             <Heading
               color={TextColor.black}
               text="United just for one reason"
@@ -57,10 +59,14 @@ export default function Home() {
             />
           </GridChild>
           <div className="flex flex-col items-center justify-start gap-4 md:flex-row">
-            <GridChild mdSize={MdSize.w6v12} position={MdTextPosition.left}>
+            <GridChild
+              mdSize={MdSize.w6v12}
+              mdPosition={MdTextPosition.left}
+              position={TextPosition.center}
+            >
               <Heading
                 color={TextColor.black}
-                text="Don't be afraid, the hungry doens't have to wait"
+                text="Don't be afraid, the hungry does not have to wait"
               />
               <Paragraph
                 color={TextColor.black}
@@ -100,17 +106,14 @@ export default function Home() {
                     alt="Pepperoni Pizza"
                   />
                 </GridChild>
-                <GridChild
-                  mdSize={MdSize.w6v12}
-                  position={MdTextPosition.center}
-                >
+                <GridChild mdSize={MdSize.w6v12}>
                   <BgImageOverlay
                     justify={JustifyContent["justify-center"]}
                     align={AlignItems["items-center"]}
                   >
                     <GridChild
                       mdSize={MdSize.w12v12}
-                      position={MdTextPosition.center}
+                      position={TextPosition.center}
                     >
                       <Heading
                         color={TextColor.white}
@@ -128,7 +131,7 @@ export default function Home() {
           </BgImageContainer>
         </GridContainer>
         <GridContainer padding={Padding["px-8"]}>
-          <GridChild mdSize={MdSize.w12v12} position={MdTextPosition.center}>
+          <GridChild mdSize={MdSize.w12v12} position={TextPosition.center}>
             <Heading color={TextColor.red} text="Menu" />
             <Paragraph
               color={TextColor.black}
@@ -157,6 +160,12 @@ export default function Home() {
               onClick={() => handleClick("Fit")}
             />
           </ul>
+          <div className="flex w-full flex-col gap-4 md:flex-row md:gap-8">
+            {showMenu === "Traditional" && <Tradicional />}
+            {showMenu === "Special" && <Special />}
+            {showMenu === "Sweet" && <Sweet />}
+            {showMenu === "Fit" && <Fit />}
+          </div>
         </GridContainer>
       </main>
     </>
