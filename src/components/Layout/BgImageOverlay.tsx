@@ -9,7 +9,7 @@ interface BgImageOverlayProps {
 
 export default function BgImageOverlay(props: BgImageOverlayProps) {
   return (
-    <div className="relative h-full w-full bg-[rgba(0,0,0,0.7)]">
+    <div className="relative h-full w-full bg-[rgba(0,0,0,0.5)]">
       <div
         className={`flex h-full w-full flex-col px-8 py-20 ${props.justify} ${props.align}`}
       >
