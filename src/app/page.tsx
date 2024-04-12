@@ -101,7 +101,7 @@ export default function Home() {
                     align={AlignItems["items-center"]}
                   >
                     <GridChild position={MdTextPosition.center}>
-                      <Heading color={TextColor.red} text="Pepperoni Classic" />
+                      <Heading color={TextColor.white} text="Pepperoni Classic" />
                       <Paragraph
                         color={TextColor.white}
                         text="It is specially prepared with first-quality Pepperoni sausage filling, mozzarella cheese, tomato sauce and oregano. The delicious and soft dough and the crunchy edge complement our version of Pepperoni pizza."
