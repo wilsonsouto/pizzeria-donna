@@ -16,6 +16,7 @@ import {
   JustifyContent,
   MdTextPosition,
   Padding,
+  TextColor,
 } from "@/components/Enums";
 
 export default function Home() {
@@ -34,8 +35,12 @@ export default function Home() {
       <main>
         <GridContainer padding={Padding["px-8"]}>
           <GridChild position={MdTextPosition.center}>
-            <Heading text="United just for one reason" />
+            <Heading
+              color={TextColor.black}
+              text="United just for one reason"
+            />
             <Paragraph
+              color={TextColor.black}
               text="We are the first pizzeria to focus on this kind of service.
               Contributing to a better experience, security, comfort and
               quality. To place an order, simply use our chatbot!"
@@ -43,11 +48,23 @@ export default function Home() {
           </GridChild>
           <div className="grid items-center justify-center gap-4 md:grid-cols-2">
             <GridChild position={MdTextPosition.left}>
-              <Heading text="Don't be afraid, the hungry doens't have to wait" />
-              <Paragraph text="✓ First quality ingredients" />
-              <Paragraph text="✓ Inspired recipes" />
-              <Paragraph text="✓ Love in every detail" />
-              <Paragraph text="✓ Our commitment is to always be present and meet your needs" />
+              <Heading
+                color={TextColor.black}
+                text="Don't be afraid, the hungry doens't have to wait"
+              />
+              <Paragraph
+                color={TextColor.black}
+                text="✓ First quality ingredients"
+              />
+              <Paragraph color={TextColor.black} text="✓ Inspired recipes" />
+              <Paragraph
+                color={TextColor.black}
+                text="✓ Love in every detail"
+              />
+              <Paragraph
+                color={TextColor.black}
+                text="✓ Our commitment is to always be present and meet your needs"
+              />
             </GridChild>
             <PizzaImageDisplay
               display={Display.flex}
@@ -62,7 +79,7 @@ export default function Home() {
               justify={JustifyContent["justify-center"]}
               align={AlignItems["items-center"]}
             >
-              <Heading text="Weekly Promotion" />
+              <Heading color={TextColor.green} text="Weekly Promotion" />
               <div className="grid h-full w-full grid-cols-1 items-center justify-center md:h-full md:grid-cols-2">
                 <PizzaImageDisplay
                   display={Display.hidden}
@@ -75,8 +92,11 @@ export default function Home() {
                     align={AlignItems["items-center"]}
                   >
                     <GridChild position={MdTextPosition.center}>
-                      <Heading text="Pepperoni Classic" />
-                      <Paragraph text="It is specially prepared with first-quality Pepperoni sausage filling, mozzarella cheese, tomato sauce and oregano. The delicious and soft dough and the crunchy edge complement our version of Pepperoni pizza." />
+                      <Heading color={TextColor.red} text="Pepperoni Classic" />
+                      <Paragraph
+                        color={TextColor.white}
+                        text="It is specially prepared with first-quality Pepperoni sausage filling, mozzarella cheese, tomato sauce and oregano. The delicious and soft dough and the crunchy edge complement our version of Pepperoni pizza."
+                      />
                     </GridChild>
                   </BgImageOverlay>
                 </GridChild>

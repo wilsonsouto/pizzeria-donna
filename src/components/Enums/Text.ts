@@ -4,4 +4,11 @@ enum MdTextPosition {
   right = "md:text-right",
 }
 
-export { MdTextPosition };
+enum TextColor {
+  black = "text-black",
+  white = "text-white",
+  green = "text-green",
+  red = "text-red",
+}
+
+export { MdTextPosition, TextColor };
