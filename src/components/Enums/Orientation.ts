@@ -1,4 +1,4 @@
-enum JustifyContent {
+export enum JustifyContent {
   "justify-start" = "justify-start",
   "justify-center" = "justify-center",
   "justify-end" = "justify-end",
@@ -7,10 +7,9 @@ enum JustifyContent {
   "justify-evenly" = "justify-evenly",
 }
 
-enum AlignItems {
+export enum AlignItems {
   "items-start" = "items-start",
   "items-center" = "items-center",
   "items-end" = "items-end",
 }
 
-export { JustifyContent, AlignItems };

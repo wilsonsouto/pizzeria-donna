@@ -1,14 +1,17 @@
 import React from "react";
-import { MdTextPosition } from "../Enums";
+import { MdTextPosition, MdSize } from "../Enums";
 
 interface GridChildProps {
   children: React.ReactNode;
-  position: MdTextPosition;
+  position?: MdTextPosition;
+  mdSize: MdSize;
 }
 
 export default function GridChild(props: GridChildProps) {
   return (
-    <div className={`flex flex-col gap-4 text-center ${props.position}`}>
+    <div
+      className={`flex flex-col gap-4 text-center w-full ${props.position} ${props.mdSize}`}
+    >
       {props.children}
     </div>
   );
