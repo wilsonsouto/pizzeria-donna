@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import {
   BgImageContainer,
   BgImageOverlay,
@@ -9,6 +11,7 @@ import {
   Heading,
   Paragraph,
   PizzaImageDisplay,
+  PizzaCategoryOption,
 } from "@/components/Elements";
 import {
   AlignItems,
@@ -20,6 +23,12 @@ import {
 } from "@/components/Enums";
 
 export default function Home() {
+  const [showMenu, setShowMenu] = useState("Traditional");
+
+  const handleClick = (menu: string) => {
+    setShowMenu(menu);
+  };
+
   return (
     <>
       <header>
@@ -103,6 +112,37 @@ export default function Home() {
               </div>
             </BgImageOverlay>
           </BgImageContainer>
+        </GridContainer>
+        <GridContainer padding={Padding["px-8"]}>
+          <GridChild position={MdTextPosition.center}>
+            <Heading color={TextColor.red} text="Menu" />
+            <Paragraph
+              color={TextColor.black}
+              text="A wide variety of products and ingredients, don't leave for tomorrow what you can eat today."
+            />
+          </GridChild>
+          <ul className="relative m-auto flex w-7/12 items-center justify-center gap-8 text-center text-xl max-md:flex-col max-sm:w-full sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl">
+            <PizzaCategoryOption
+              flavor="Traditional"
+              isActive={showMenu === "Traditional"}
+              onClick={() => handleClick("Traditional")}
+            />
+            <PizzaCategoryOption
+              flavor="Special"
+              isActive={showMenu === "Special"}
+              onClick={() => handleClick("Special")}
+            />
+            <PizzaCategoryOption
+              flavor="Sweet"
+              isActive={showMenu === "Sweet"}
+              onClick={() => handleClick("Sweet")}
+            />
+            <PizzaCategoryOption
+              flavor="Fit"
+              isActive={showMenu === "Fit"}
+              onClick={() => handleClick("Fit")}
+            />
+          </ul>
         </GridContainer>
       </main>
     </>
