@@ -24,6 +24,7 @@ import {
   TextPosition,
 } from "@/components/Enums";
 import { Fit, Special, Sweet, Tradicional } from "@/components/Menu";
+import Image from "next/image";
 
 export default function Home() {
   const [showMenu, setShowMenu] = useState("Traditional");
@@ -41,6 +42,14 @@ export default function Home() {
             align={AlignItems["items-center"]}
           >
             <BrandLogo span1="Pizzeria" span2="Donna" />
+            <Image
+              priority={true}
+              className="absolute -bottom-[70px] -left-1"
+              src={"/img/plant.svg"}
+              alt="plant"
+              width={80}
+              height={80}
+            />
           </BgImageOverlay>
         </BgImageContainer>
       </header>
@@ -98,6 +107,14 @@ export default function Home() {
               align={AlignItems["items-center"]}
             >
               <Heading color={TextColor.green} text="Weekly Promotion" />
+              <Image
+                priority={true}
+                className="absolute -top-12 right-0 max-sm:w-14"
+                src={"/img/leaf.svg"}
+                alt="leaf"
+                width={60}
+                height={60}
+              ></Image>
               <div className="flex h-full flex-col items-center justify-center md:flex-row">
                 <GridChild mdSize={MdSize.w6v12}>
                   <PizzaImageDisplay
@@ -115,10 +132,7 @@ export default function Home() {
                       mdSize={MdSize.w12v12}
                       position={TextPosition.center}
                     >
-                      <Heading
-                        color={TextColor.white}
-                        text="Pepperoni Classic"
-                      />
+                      <Heading color={TextColor.red} text="Pepperoni Classic" />
                       <Paragraph
                         color={TextColor.white}
                         text="It is specially prepared with first-quality Pepperoni sausage filling, mozzarella cheese, tomato sauce and oregano. The delicious and soft dough and the crunchy edge complement our version of Pepperoni pizza."
@@ -165,6 +179,14 @@ export default function Home() {
             {showMenu === "Special" && <Special />}
             {showMenu === "Sweet" && <Sweet />}
             {showMenu === "Fit" && <Fit />}
+            <Image
+              priority={true}
+              className="absolute -left-2 top-0"
+              src={"/img/pepper.svg"}
+              alt="pepper"
+              width={100}
+              height={100}
+            ></Image>
           </div>
         </GridContainer>
       </main>
@@ -175,6 +197,14 @@ export default function Home() {
             align={AlignItems["items-center"]}
           >
             <BrandLogo span1="Pizzeria" span2="Donna" />
+            <Image
+              priority={true}
+              className="absolute -top-[50px] right-7 max-sm:-top-[50px] max-sm:w-28"
+              src={"/img/tomato.svg"}
+              alt="folha"
+              width={110}
+              height={110}
+            ></Image>
           </BgImageOverlay>
         </BgImageContainer>
       </footer>
