@@ -12,6 +12,7 @@ import {
   Paragraph,
   PizzaImageDisplay,
   PizzaCategoryOption,
+  WatsonAssistant,
 } from "@/components/Elements";
 import {
   AlignItems,
@@ -208,6 +209,7 @@ export default function Home() {
           </BgImageOverlay>
         </BgImageContainer>
       </footer>
+      <WatsonAssistant />
     </>
   );
 }
