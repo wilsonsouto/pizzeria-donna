@@ -168,6 +168,16 @@ export default function Home() {
           </div>
         </GridContainer>
       </main>
+      <footer>
+        <BgImageContainer url="https://images.unsplash.com/photo-1696420691045-330c5669e96c?q=80&w=2056&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+          <BgImageOverlay
+            justify={JustifyContent["justify-center"]}
+            align={AlignItems["items-center"]}
+          >
+            <BrandLogo span1="Pizzeria" span2="Donna" />
+          </BgImageOverlay>
+        </BgImageContainer>
+      </footer>
     </>
   );
 }

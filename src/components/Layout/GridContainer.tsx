@@ -9,7 +9,7 @@ interface GridContainerProps {
 export default function GridContainer(props: GridContainerProps) {
   return (
     <section
-      className={`relative flex w-full flex-col gap-20 py-20 ${props.padding}`}
+      className={`relative flex w-full flex-col gap-20 odd:py-20 ${props.padding}`}
     >
       {props.children}
     </section>
