@@ -65,11 +65,11 @@ With that in mind, I developed a landing page with a pizzeria-themed design, whe
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
+- [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Watson Assistant](https://www.ibm.com/products/watsonx-assistant/)
 
 ## :white_check_mark: Requirements
 
