@@ -1,10 +1,4 @@
-<div align="center" id="top"> 
-  <!-- <img src="./.github/app.gif" alt="Pizzeria Donna" /> -->
-
 &#xa0;
-
-  <!-- <a href="https://pizzeriadonna.netlify.app">Demo</a> -->
-</div>
 
 <h1 align="center">Pizzeria Donna</h1>
 
