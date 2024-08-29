@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body,
+  html {
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+
+  img,
+  picture,
+  svg,
+  video,
+  canvas {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-style: italic;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+}
