@@ -1,4 +1,4 @@
-@layer components {
+@layer banner.components {
   :host {
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@
   }
 }
 
-@layer responsive {
+@layer banner.responsiveness {
   @media (min-width: 640px) {
     :host {
       height: 90vh;
