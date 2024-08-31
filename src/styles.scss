@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.cdnfonts.com/css/apercu");
 
-@layer global {
+@layer variables {
   :root {
     --color-green: #228b22;
     --color-red: #cd212a;
@@ -10,9 +10,7 @@
 }
 
 @layer reset {
-  *,
-  *::before,
-  *::after {
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -23,6 +21,11 @@
     scroll-behavior: smooth;
     height: 100%;
     font-family: "Apercu", "sans-serif";
+  }
+
+  ul,
+  ol {
+    list-style: none;
   }
 
   img,
@@ -43,5 +46,68 @@
   textarea,
   select {
     font: inherit;
+  }
+}
+
+@layer components {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .text-heading {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: "Lobster", "cursive";
+    font-weight: 100;
+  }
+
+  .text-subheading {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+  }
+}
+
+@layer responsiveness {
+  @media (min-width: 640px) {
+    .text-heading {
+      font-size: 2rem;
+    }
+    .text-subheading {
+      font-size: 1.25rem;
+    }
+  }
+
+  /* For screens 768px and wider */
+  @media (min-width: 768px) {
+    .text-heading {
+      font-size: 2.25rem;
+    }
+    .text-subheading {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* For screens 1024px and wider */
+  @media (min-width: 1024px) {
+    .text-heading {
+      font-size: 2.5rem;
+    }
+    .text-subheading {
+      font-size: 1.75rem;
+    }
+  }
+
+  /* For screens 1280px and wider */
+  @media (min-width: 1280px) {
+    .text-heading {
+      font-size: 2.75rem;
+    }
+    .text-subheading {
+      font-size: 2rem;
+    }
   }
 }
