@@ -1,0 +1,77 @@
+@layer service-components {
+  :host {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-content {
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    margin-top: 0;
+    text-align: center;
+    .text-heading {
+      width: 100%;
+    }
+  }
+
+  .service-background {
+    height: 250px;
+    border-radius: 0.825rem;
+  }
+}
+
+@layer service.responsiveness {
+  @media (min-width: 640px) {
+    .service-content {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 5rem;
+      text-align: left;
+    }
+
+    .service-background {
+      height: 500px;
+    }
+  }
+
+  /* For screens 768px and wider */
+  @media (min-width: 768px) {
+    .service-content {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 5rem;
+      text-align: left;
+    }
+
+    .service-background {
+      height: 500px;
+    }
+  }
+
+  /* For screens 1024px and wider */
+  @media (min-width: 1024px) {
+    .service-content {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 5rem;
+      text-align: left;
+    }
+
+    .service-background {
+      height: 500px;
+    }
+  }
+
+  /* For screens 1280px and wider */
+  @media (min-width: 1280px) {
+    .service-content {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 5rem;
+      text-align: left;
+    }
+
+    .service-background {
+      height: 500px;
+    }
+  }
+}

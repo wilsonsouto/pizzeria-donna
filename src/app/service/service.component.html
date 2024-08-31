@@ -1,0 +1,25 @@
+<h1 class="text-heading">{{ heading[0] }}</h1>
+<p class="text-subheading">
+  We are the first pizzeria to focus on this kind of service. Contributing to a
+  better experience, security, comfort and quality. To place an order, simply
+  use our chatbot!
+</p>
+<div>
+  <div class="service-content">
+    <article>
+      <h2 class="text-heading">
+        {{ heading[1] }}
+      </h2>
+      <nav>
+        <ul class="text-subheading">
+          <li *ngFor="let service of services">{{ service }}</li>
+        </ul>
+      </nav>
+    </article>
+    <img
+      class="service-background"
+      src="/service-bg.png"
+      alt="Person making pizza"
+    />
+  </div>
+</div>
