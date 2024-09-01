@@ -34,11 +34,12 @@
   video,
   canvas {
     object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 0.825rem;
+    border-radius: 0.75rem;
     font-style: italic;
   }
 
