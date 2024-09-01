@@ -1,5 +1,13 @@
 .header {
+  position: relative;
   background: url("/banner-bg.png") no-repeat center;
+  
+  &::after {
+    content: url("/plant.svg");
+    position: absolute;
+    bottom: -80px;
+    left: -0.25rem;
+  }
 }
 
 .promotion {
@@ -8,4 +16,20 @@
 
 .footer {
   background: url("/footer-bg.png") no-repeat center;
+}
+
+#service {
+  position: relative;
+}
+
+#menu {
+  position: relative;
+  
+  &::after {
+    content: url("/pepper.svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+  }
 }
