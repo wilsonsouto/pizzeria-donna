@@ -1,0 +1,56 @@
+@layer promotion.components {
+  :host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .promotion-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+  }
+
+  .promotion-background {
+    display: none;
+    width: 100%;
+    height: 500px;
+  }
+
+  .promotion-description {
+    place-self: center;
+    place-content: center;
+    display: grid;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.825rem;
+    color: var(--color-white);
+  }
+
+  .text-heading {
+    color: var(--color-green);
+  }
+}
+
+@layer promotion.responsiveness {
+  @media (min-width: 640px) {
+    .promotion-content {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .promotion-description {
+      border-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .promotion-background {
+      display: block;
+      height: 500px;
+    }
+  }
+}
