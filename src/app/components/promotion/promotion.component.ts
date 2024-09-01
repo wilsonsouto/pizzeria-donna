@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-
-interface Props {
-  heading: string[];
-  subheading: string;
-}
+import { Section } from '../../models/section.interface';
 
 @Component({
   selector: 'app-promotion',
@@ -12,8 +8,8 @@ interface Props {
   templateUrl: './promotion.component.html',
   styleUrl: './promotion.component.scss',
 })
-export class PromotionComponent implements Props {
-  heading: string[] = ['Weekly Promotion', 'Pepperoni Classic'];
+export class PromotionComponent implements Section {
+  heading: string[] = ['Weekly Promotin', 'Pepperoni Classic'];
   subheading: string =
     'It is specially prepared with first-quality Pepperoni sausage filling, mozzarella cheese, tomato sauce and oregano. The delicious and soft dough and the crunchy edge complement our version of Pepperoni pizza.';
 }

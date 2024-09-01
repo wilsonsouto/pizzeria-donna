@@ -1,7 +1,8 @@
 import { CommonModule, NgSwitch } from '@angular/common';
 import { Component } from '@angular/core';
+import { Section } from '../../models/section.interface';
 
-interface Props {
+interface Menu {
   heading: string;
   price: number;
   subtitle: string;
@@ -14,7 +15,11 @@ interface Props {
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss',
 })
-export class MenuComponent {
+export class MenuComponent implements Section {
+  heading: string[] = ['Menu'];
+  subheading: string =
+    "A wide variety of products and ingredients, don't leave for tomorrow what you can eat today.";
+  menu: string[] = ['Traditional', 'Special', 'Sweet', 'Fit'];
   selectedMenu: string = 'traditional';
 
   handleClick(menu: string) {
@@ -22,7 +27,7 @@ export class MenuComponent {
   }
 
   getTraditional() {
-    const leftContent: Props[] = [
+    const leftContent: Menu[] = [
       {
         heading: 'Margherita',
         price: 9.99,
@@ -47,7 +52,7 @@ export class MenuComponent {
       },
     ];
 
-    const rightContent: Props[] = [
+    const rightContent: Menu[] = [
       {
         heading: 'Pepperoni Classic',
         price: 6.99,
@@ -77,7 +82,7 @@ export class MenuComponent {
   }
 
   getSpecial() {
-    const leftContent: Props[] = [
+    const leftContent: Menu[] = [
       {
         heading: 'Truffle Delight',
         price: 18.99,
@@ -103,7 +108,7 @@ export class MenuComponent {
       },
     ];
 
-    const rightContent: Props[] = [
+    const rightContent: Menu[] = [
       {
         heading: 'Seafood Sensation',
         price: 20.99,
@@ -132,7 +137,7 @@ export class MenuComponent {
   }
 
   getSweet() {
-    const leftContent: Props[] = [
+    const leftContent: Menu[] = [
       {
         heading: 'Sweet Nutella Delight',
         price: 11.99,
@@ -156,7 +161,7 @@ export class MenuComponent {
       },
     ];
 
-    const rightContent: Props[] = [
+    const rightContent: Menu[] = [
       {
         heading: 'Peaches and Cream',
         price: 11.99,
@@ -186,7 +191,7 @@ export class MenuComponent {
   }
 
   getFit() {
-    const leftContent: Props[] = [
+    const leftContent: Menu[] = [
       {
         heading: 'Supreme',
         price: 13.99,
@@ -213,7 +218,7 @@ export class MenuComponent {
       },
     ];
 
-    const rightContent: Props[] = [
+    const rightContent: Menu[] = [
       {
         heading: 'Quinoa Power',
         price: 12.99,

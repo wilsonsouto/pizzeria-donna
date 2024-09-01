@@ -1,11 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
-interface Props {
-  heading: string[];
-  subheading: string;
-  services: string[];
-}
+import { Section } from '../../models/section.interface';
 
 @Component({
   selector: 'app-service',
@@ -14,7 +9,7 @@ interface Props {
   templateUrl: './service.component.html',
   styleUrl: './service.component.scss',
 })
-export class ServiceComponent implements Props {
+export class ServiceComponent implements Section {
   heading: string[] = [
     'United just for one reason',
     "Don't be afraid, the hungry does not have to wait",

@@ -1,7 +1,6 @@
-<h1 class="text-heading">Menu</h1>
+<h1 class="text-heading">{{ heading }}</h1>
 <p class="text-subheading">
-  A wide variety of products and ingredients, don't leave for tomorrow what you
-  can eat today.
+  {{ subheading }}
 </p>
 <nav>
   <ul class="menu-list text-subheading">
@@ -9,19 +8,19 @@
       [class.active]="selectedMenu == 'traditional'"
       (click)="handleClick('traditional')"
     >
-      Traditional
+      {{ menu[0] }}
     </li>
     <li
       [class.active]="selectedMenu == 'special'"
       (click)="handleClick('special')"
     >
-      Special
+      {{ menu[1] }}
     </li>
     <li [class.active]="selectedMenu == 'sweet'" (click)="handleClick('sweet')">
-      Sweet
+      {{ menu[2] }}
     </li>
     <li [class.active]="selectedMenu == 'fit'" (click)="handleClick('fit')">
-      Fit
+      {{ menu[3] }}
     </li>
   </ul>
 </nav>
