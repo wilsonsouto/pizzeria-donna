@@ -4,14 +4,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     background: rgba(0, 0, 0, 0.7);
+    text-align: center;
   }
 
   .promotion-content {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 
   .promotion-background {
@@ -40,6 +40,7 @@
   @media (min-width: 640px) {
     .promotion-content {
       grid-template-columns: 1fr 1fr;
+      margin-top: 4rem;
     }
 
     .promotion-description {
