@@ -9,7 +9,7 @@ import { Section } from '../../models/section.interface';
   styleUrl: './promotion.component.scss',
 })
 export class PromotionComponent implements Section {
-  heading: string[] = ['Weekly Promotin', 'Pepperoni Classic'];
+  heading: string[] = ['Weekly Promotion', 'Pepperoni Classic'];
   subheading: string =
     'It is specially prepared with first-quality Pepperoni sausage filling, mozzarella cheese, tomato sauce and oregano. The delicious and soft dough and the crunchy edge complement our version of Pepperoni pizza.';
 }

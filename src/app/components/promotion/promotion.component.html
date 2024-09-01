@@ -1,13 +1,15 @@
-<h1 class="text-heading">{{ heading[0] }}</h1>
+<h1 [attr.aria-label]="heading[0]" class="text-heading">{{ heading[0] }}</h1>
 <div class="promotion-content">
   <img
     class="promotion-background"
     src="/promotion-bg.png"
-    alt="Pepperoni Pizza"
+    alt="Pepperoni pizza"
   />
   <article class="promotion-description">
-    <h2 class="text-heading">{{ heading[1] }}</h2>
-    <p class="text-subheading">
+    <h2 [attr.aria-label]="heading[1]" class="text-heading">
+      {{ heading[1] }}
+    </h2>
+    <p [attr.aria-label]="subheading" class="text-subheading">
       {{ subheading }}
     </p>
   </article>

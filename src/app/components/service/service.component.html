@@ -1,18 +1,18 @@
-<h1 class="text-heading">{{ heading[0] }}</h1>
-<p class="text-subheading">
-  We are the first pizzeria to focus on this kind of service. Contributing to a
-  better experience, security, comfort and quality. To place an order, simply
-  use our chatbot!
+<h1 [attr.aria-label]="heading[0]" class="text-heading">{{ heading[0] }}</h1>
+<p [attr.aria-label]="subheading" class="text-subheading">
+  {{ subheading }}
 </p>
 <div>
   <div class="service-content">
     <article>
-      <h2 class="text-heading">
+      <h2 [attr.aria-label]="heading[1]" class="text-heading">
         {{ heading[1] }}
       </h2>
       <nav>
         <ul class="text-subheading">
-          <li *ngFor="let service of services">{{ service }}</li>
+          <li [attr.aria-label]="service" *ngFor="let service of services">
+            {{ service }}
+          </li>
         </ul>
       </nav>
     </article>
