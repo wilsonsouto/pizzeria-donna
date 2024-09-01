@@ -1,0 +1,137 @@
+<h1 class="text-heading">Menu</h1>
+<p class="text-subheading">
+  A wide variety of products and ingredients, don't leave for tomorrow what you
+  can eat today.
+</p>
+<nav>
+  <ul class="menu-list text-subheading">
+    <li
+      [class.active]="selectedMenu == 'traditional'"
+      (click)="handleClick('traditional')"
+    >
+      Traditional
+    </li>
+    <li
+      [class.active]="selectedMenu == 'special'"
+      (click)="handleClick('special')"
+    >
+      Special
+    </li>
+    <li [class.active]="selectedMenu == 'sweet'" (click)="handleClick('sweet')">
+      Sweet
+    </li>
+    <li [class.active]="selectedMenu == 'fit'" (click)="handleClick('fit')">
+      Fit
+    </li>
+  </ul>
+</nav>
+<div class="menu-container" [ngSwitch]="selectedMenu">
+  <!-- #region traditional-->
+  <div class="menu-content" *ngSwitchCase="'traditional'">
+    <div *ngFor="let item of getTraditional().leftContent">
+      <div class="menu-item">
+        <h3 class="text-heading">{{ item.heading }}</h3>
+        <span class="text-subheading menu-price">$ {{ item.price }}</span>
+      </div>
+      <p class="text-subheading">
+        {{ item.subtitle }}
+      </p>
+    </div>
+  </div>
+  <div class="menu-content" *ngSwitchCase="'traditional'">
+    <div *ngFor="let item of getTraditional().rightContent">
+      <div class="menu-item">
+        <h3 class="text-heading">{{ item.heading }}</h3>
+        <span class="text-subheading menu-price">$ {{ item.price }}</span>
+      </div>
+      <p class="text-subheading">
+        {{ item.subtitle }}
+      </p>
+    </div>
+  </div>
+  <!-- #endregion -->
+  <!-- #region special-->
+  <div *ngSwitchCase="'special'">
+    <div class="menu-content" *ngSwitchCase="'special'">
+      <div *ngFor="let item of getSpecial().leftContent">
+        <div class="menu-item">
+          <h3 class="text-heading">{{ item.heading }}</h3>
+          <span class="text-subheading menu-price">$ {{ item.price }}</span>
+        </div>
+        <p class="text-subheading">
+          {{ item.subtitle }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'special'">
+    <div class="menu-content" *ngSwitchCase="'special'">
+      <div *ngFor="let item of getSpecial().rightContent">
+        <div class="menu-item">
+          <h3 class="text-heading">{{ item.heading }}</h3>
+          <span class="text-subheading menu-price">$ {{ item.price }}</span>
+        </div>
+        <p class="text-subheading">
+          {{ item.subtitle }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+  <!-- #region sweet-->
+  <div *ngSwitchCase="'sweet'">
+    <div class="menu-content" *ngSwitchCase="'sweet'">
+      <div *ngFor="let item of getSweet().leftContent">
+        <div class="menu-item">
+          <h3 class="text-heading">{{ item.heading }}</h3>
+          <span class="text-subheading menu-price">$ {{ item.price }}</span>
+        </div>
+        <p class="text-subheading">
+          {{ item.subtitle }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'sweet'">
+    <div class="menu-content" *ngSwitchCase="'sweet'">
+      <div *ngFor="let item of getSweet().rightContent">
+        <div class="menu-item">
+          <h3 class="text-heading">{{ item.heading }}</h3>
+          <span class="text-subheading menu-price">$ {{ item.price }}</span>
+        </div>
+        <p class="text-subheading">
+          {{ item.subtitle }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+  <!-- #region fit-->
+  <div *ngSwitchCase="'fit'">
+    <div class="menu-content" *ngSwitchCase="'fit'">
+      <div *ngFor="let item of getFit().leftContent">
+        <div class="menu-item">
+          <h3 class="text-heading">{{ item.heading }}</h3>
+          <span class="text-subheading menu-price">$ {{ item.price }}</span>
+        </div>
+        <p class="text-subheading">
+          {{ item.subtitle }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'fit'">
+    <div class="menu-content" *ngSwitchCase="'fit'">
+      <div *ngFor="let item of getFit().rightContent">
+        <div class="menu-item">
+          <h3 class="text-heading">{{ item.heading }}</h3>
+          <span class="text-subheading menu-price">$ {{ item.price }}</span>
+        </div>
+        <p class="text-subheading">
+          {{ item.subtitle }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion -->
+</div>
