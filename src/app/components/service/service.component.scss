@@ -1,4 +1,4 @@
-@layer service-components {
+@layer service-component {
   :host {
     display: flex;
     flex-direction: column;
@@ -12,69 +12,70 @@
     grid-template-columns: 1fr;
     margin-top: 0;
     text-align: center;
+    
     .text-heading {
       width: 100%;
     }
-  }
 
-  .service-background {
-    height: 250px;
+    .service-background {
+      height: 250px;
+    }
   }
 }
 
 @layer service.responsiveness {
   @media (min-width: 640px) {
     .service-content {
+      gap: 1rem;
       grid-template-columns: 1fr 1fr;
       margin-top: 5rem;
       text-align: left;
-      gap: 1rem;
-    }
-
-    .service-background {
-      height: 500px;
+      
+      .service-background {
+        height: 500px;
+      }
     }
   }
 
   /* For screens 768px and wider */
   @media (min-width: 768px) {
     .service-content {
+      gap: 1rem;
       grid-template-columns: 1fr 1fr;
       margin-top: 5rem;
       text-align: left;
-      gap: 1rem;
-    }
-
-    .service-background {
-      height: 500px;
+      
+      .service-background {
+        height: 500px;
+      }
     }
   }
 
   /* For screens 1024px and wider */
   @media (min-width: 1024px) {
     .service-content {
+      gap: 1rem;
       grid-template-columns: 1fr 1fr;
       margin-top: 5rem;
       text-align: left;
-      gap: 1rem;
-    }
-
-    .service-background {
-      height: 500px;
+      
+      .service-background {
+        height: 500px;
+      }
     }
   }
 
   /* For screens 1280px and wider */
   @media (min-width: 1280px) {
     .service-content {
+      gap: 1rem;
       grid-template-columns: 1fr 1fr;
       margin-top: 4rem;
       text-align: left;
-      gap: 1rem;
-    }
-
-    .service-background {
-      height: 500px;
+      
+      .service-background {
+        height: 500px;
+      }
     }
   }
 }

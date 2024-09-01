@@ -1,10 +1,5 @@
 import { Component } from '@angular/core';
 
-interface Props {
-  value1: string;
-  value2: string;
-}
-
 @Component({
   selector: 'app-banner',
   standalone: true,
@@ -12,7 +7,7 @@ interface Props {
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss',
 })
-export class BannerComponent implements Props {
-  value1 = 'Pizzeria';
-  value2 = 'Donna';
+export class BannerComponent {
+  value1: string = 'Pizzeria';
+  value2: string = 'Donna';
 }

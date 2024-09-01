@@ -1,4 +1,4 @@
-@layer promotion.components {
+@layer promotion.component {
   :host {
     display: flex;
     flex-direction: column;
@@ -8,31 +8,31 @@
     text-align: center;
   }
 
+  .text-heading {
+    color: var(--color-green);
+  }
+
   .promotion-content {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 2rem;
-  }
 
-  .promotion-background {
-    display: none;
-    width: 100%;
-    height: 500px;
-  }
+    .promotion-background {
+      display: none;
+      width: 100%;
+      height: 500px;
+    }
 
-  .promotion-description {
-    place-self: center;
-    place-content: center;
-    display: grid;
-    padding: 2rem;
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0.75rem;
-    color: var(--color-white);
-  }
-
-  .text-heading {
-    color: var(--color-green);
+    .promotion-description {
+      place-self: center;
+      place-content: center;
+      display: grid;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0.75rem;
+      color: var(--color-white);
+    }
   }
 }
 
@@ -41,17 +41,17 @@
     .promotion-content {
       grid-template-columns: 1fr 1fr;
       margin-top: 4rem;
-    }
 
-    .promotion-description {
-      border-left: 0;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
+      .promotion-background {
+        display: block;
+        height: 500px;
+      }
 
-    .promotion-background {
-      display: block;
-      height: 500px;
+      .promotion-description {
+        border-left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
     }
   }
 }
