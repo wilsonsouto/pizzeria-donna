@@ -35,7 +35,6 @@
   </ul>
 </nav>
 <div class="menu-container" [ngSwitch]="selectedMenu">
-  <!-- #region traditional-->
   <div class="menu-content" *ngSwitchCase="'traditional'">
     <div *ngFor="let item of getTraditional().leftContent">
       <div class="menu-item">
@@ -66,8 +65,6 @@
       </p>
     </div>
   </div>
-  <!-- #endregion -->
-  <!-- #region special-->
   <div *ngSwitchCase="'special'">
     <div class="menu-content" *ngSwitchCase="'special'">
       <div *ngFor="let item of getSpecial().leftContent">
@@ -106,8 +103,6 @@
       </div>
     </div>
   </div>
-  <!-- #endregion -->
-  <!-- #region sweet-->
   <div *ngSwitchCase="'sweet'">
     <div class="menu-content" *ngSwitchCase="'sweet'">
       <div *ngFor="let item of getSweet().leftContent">
@@ -146,8 +141,6 @@
       </div>
     </div>
   </div>
-  <!-- #endregion -->
-  <!-- #region fit-->
   <div *ngSwitchCase="'fit'">
     <div class="menu-content" *ngSwitchCase="'fit'">
       <div *ngFor="let item of getFit().leftContent">
@@ -186,5 +179,4 @@
       </div>
     </div>
   </div>
-  <!-- #endregion -->
 </div>
