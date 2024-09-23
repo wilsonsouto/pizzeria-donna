@@ -61,8 +61,11 @@ The following tools were used in this project:
 
 - [Angular](https://angular.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Sass](https://sass-lang.com/)
-- [Watson Assistant](https://www.ibm.com/products/watsonx-assistant/)
+- [IBM Watson Assistant](https://www.ibm.com/products/watsonx-assistant/)
 
 ## :white_check_mark: Requirements
 
