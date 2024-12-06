@@ -40,7 +40,7 @@
 
 ## :dart: About
 
-During my internship at IBM, I had the opportunity to develop a project using IBM Watson Assistant, a powerful tool for creating intelligent chatbots. Although the project theme was open-ended, I chose to address a critical issue: domestic violence.
+During my internship at IBM, I had the opportunity to develop a project using IBM Watson Assistant, a powerful tool for creating intelligent chatbots. Although the project theme was open-ended, I chose to address a critical issue: domestic violence against women.
 
 One major challenge faced by victims of domestic violence is finding a discreet and secure way to communicate their situation without alerting their abuser. To tackle this, I designed a chatbot integrated into a landing page with a pizzeria-themed interface. This design choice was intentional, as it allows victims to simulate placing a pizza order, thereby communicating their distress without raising suspicion.
 
@@ -48,7 +48,7 @@ In reality, any information shared through this simulated order would be confide
 
 ## :sparkles: Features
 
-:heavy_check_mark: **Feature 1**: Inform your name;\
+:heavy_check_mark: **Feature 1**: Inform your name *(Note: Only female names have been registered in the database)*;\
 :heavy_check_mark: **Feature 2**: Inform your address and any additional information;\
 :heavy_check_mark: **Feature 3**: Select your pizza flavor;\
 :heavy_check_mark: **Feature 4**: If choosing 'Personal-sized' it will indicate that the victim is alone, otherwise, the victim is accompanied;\
