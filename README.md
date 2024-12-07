@@ -48,7 +48,7 @@ In reality, any information shared through this simulated order would be confide
 
 ## :sparkles: Features
 
-:heavy_check_mark: **Feature 1**: Inform your name *(Note: Only female names have been registered in the database)*;\
+:heavy_check_mark: **Feature 1**: Inform your name;\
 :heavy_check_mark: **Feature 2**: Inform your address and any additional information;\
 :heavy_check_mark: **Feature 3**: Select your pizza flavor;\
 :heavy_check_mark: **Feature 4**: If choosing 'Personal-sized' it will indicate that the victim is alone, otherwise, the victim is accompanied;\
