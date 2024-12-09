@@ -1,6 +1,6 @@
 import { CommonModule, NgSwitch } from '@angular/common';
 import { Component } from '@angular/core';
-import { Section } from '../../models/section.interface';
+import { Section } from '../../models/interface/section.interface';
 
 interface Menu {
   heading: string;

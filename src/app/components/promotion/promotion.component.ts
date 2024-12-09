@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Section } from '../../models/section.interface';
+import { Section } from '../../models/interface/section.interface';
 
 @Component({
   selector: 'app-promotion',
