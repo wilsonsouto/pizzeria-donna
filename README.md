@@ -59,13 +59,12 @@ In reality, any information shared through this simulated order would be confide
 
 The following tools were used in this project:
 
-- [Angular](https://angular.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [Sass](https://sass-lang.com/)
-- [IBM Watson Assistant](https://www.ibm.com/products/watsonx-assistant/)
+- Angular
+- TypeScript
+- JavaScript
+- HTML
+- CSS/SASS
+- IBM Watson Assistant
 
 ## :white_check_mark: Requirements
 
