@@ -61,7 +61,6 @@ The following tools were used in this project:
 
 - Angular
 - TypeScript
-- JavaScript
 - HTML
 - CSS/SASS
 - IBM Watson Assistant
