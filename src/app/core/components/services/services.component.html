@@ -1,0 +1,31 @@
+<app-heading-section [attr.aria-label]="heading[0]" [title]="heading[0]" />
+<app-text-section
+  [attr.aria-label]="subheading"
+  [isListItem]="false"
+  [title]="subheading"
+/>
+<div
+  class="grid grid-cols-1 items-center justify-center gap-10 pt-20 lg:grid-cols-2"
+>
+  <article
+    [attr.aria-label]="'Services: '"
+    class="flex flex-col justify-center text-center lg:text-start"
+  >
+    <app-heading-section [attr.aria-label]="heading[1]" [title]="heading[1]" />
+    <nav>
+      <ul>
+        <app-text-section
+          *ngFor="let service of services"
+          [attr.aria-label]="service"
+          [isListItem]="true"
+          [title]="service"
+        />
+      </ul>
+    </nav>
+  </article>
+  <img
+    class="h-64 w-full rounded-lg bg-cover object-cover shadow-lg lg:h-small"
+    src="./services.jpeg"
+    alt="Person preparing a delicious pizza dough"
+  />
+</div>

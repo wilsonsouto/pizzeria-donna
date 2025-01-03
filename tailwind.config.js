@@ -25,7 +25,7 @@ module.exports = {
       },
       height: {
         large: "800px",
-        small: "400px"
+        small: "500px"
       }
     },
   },
