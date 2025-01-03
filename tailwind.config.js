@@ -15,6 +15,7 @@ module.exports = {
       },
       backgroundImage: {
          header: "url('/header.jpeg')",
+         promotion: "url('/promotion.jpeg')",
       },
       backgroundColor: {
          shadow: "rgba(0, 0, 0, 0.8)"

@@ -1,17 +1,20 @@
-<app-heading-section
-  [attr.aria-label]="'Services section'"
-  [title]="heading[0]"
-/>
-<app-text-section
-  [attr.aria-label]="subheading"
-  [isListItem]="false"
-  [title]="subheading"
-/>
-<div
-  class="grid grid-cols-1 items-center justify-center gap-10 pt-20 lg:grid-cols-2"
->
+<div>
+  <app-heading-section
+    [attr.aria-label]="'Services section'"
+    [title]="heading[0]"
+  />
+  <app-text-section
+    [attr.aria-label]="subheading"
+    [isListItem]="false"
+    [title]="subheading"
+  />
+</div>
+<div class="grid grid-cols-1 items-center justify-center gap-10 lg:grid-cols-2">
   <article class="flex flex-col justify-center text-center lg:text-start">
-    <app-heading-section [attr.aria-label]="'Services offered'" [title]="heading[1]" />
+    <app-heading-section
+      [attr.aria-label]="'Services offered'"
+      [title]="heading[1]"
+    />
     <nav>
       <ul>
         <app-text-section
