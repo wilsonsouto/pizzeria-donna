@@ -13,6 +13,20 @@ module.exports = {
           red: "#cd212a"
         },
       },
+      backgroundImage: {
+         header: "url('/header.jpeg')",
+      },
+      backgroundColor: {
+         shadow: "rgba(0, 0, 0, 0.8)"
+      },
+      fontFamily: {
+        apercu: ["Apercu", "sans-serif"],
+        lobster: ["Lobster", "cursive"],
+      },
+      height: {
+        large: "800px",
+        small: "400px"
+      }
     },
   },
   plugins: [],

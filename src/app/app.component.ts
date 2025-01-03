@@ -1,13 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { BannerComponent } from "./shared/components/banner/banner.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, BannerComponent],
   templateUrl: './app.component.html',
 })
-export class AppComponent {
-  public title: string = 'Angular Starter Kit';
-}
+export class AppComponent {}
