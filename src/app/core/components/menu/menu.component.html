@@ -1,0 +1,43 @@
+<div>
+  <app-heading-section
+    class="text-accent-red"
+    [attr.aria-label]="'Menu section'"
+    [title]="heading"
+  />
+  <app-text-section
+    [attr.aria-label]="subheading"
+    [isListItem]="false"
+    [title]="subheading"
+  />
+</div>
+<nav>
+  <ul class="flex flex-wrap items-center justify-center gap-8">
+    <app-text-section
+      class="flex-1 cursor-pointer rounded-lg border p-4 transition-all hover:bg-accent-red hover:text-background"
+      [isListItem]="true"
+      *ngFor="let item of menu; let i = index"
+      [attr.aria-label]="item"
+      [class.active]="selectedMenu === item"
+      (click)="handleClick(item)"
+      [title]="item"
+    />
+  </ul>
+</nav>
+<div [ngSwitch]="selectedMenu">
+  <app-traditional-menu
+    class="grid grid-cols-1 gap-10 place-self-start text-start lg:grid-cols-2"
+    *ngSwitchCase="'Traditional'"
+  />
+  <app-special-menu
+    class="grid grid-cols-1 gap-10 place-self-start text-start lg:grid-cols-2"
+    *ngSwitchCase="'Special'"
+  />
+  <app-sweet-menu
+    class="grid grid-cols-1 gap-10 place-self-start text-start lg:grid-cols-2"
+    *ngSwitchCase="'Sweet'"
+  />
+  <app-fit-menu
+    class="grid grid-cols-1 gap-10 place-self-start text-start lg:grid-cols-2"
+    *ngSwitchCase="'Fit'"
+  />
+</div>
