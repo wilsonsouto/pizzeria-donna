@@ -13,11 +13,6 @@ module.exports = {
           red: "#cd212a"
         },
       },
-      backgroundImage: {
-         header: "url('/header.jpeg')",
-         promotion: "url('/promotion.jpeg')",
-         footer: "url('/footer.jpeg')",
-      },
       backgroundColor: {
          shadow: "rgba(0, 0, 0, 0.8)"
       },
