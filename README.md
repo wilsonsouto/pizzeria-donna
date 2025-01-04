@@ -59,11 +59,11 @@ In reality, any information shared through this simulated order would be confide
 
 The following tools were used in this project:
 
+- IBM Watson Assistant
 - Angular
 - TypeScript
 - HTML
 - TailwindCSS
-- IBM Watson Assistant
 
 ## :white_check_mark: Requirements
 
