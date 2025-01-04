@@ -1,0 +1,34 @@
+<div *ngFor="let item of getMenu().leftContent">
+  <div class="grid grid-cols-[1fr_auto] gap-4">
+    <app-heading-section
+      [attr.aria-label]="'Flavor: ' + item.heading"
+      class="text-accent-red"
+      [title]="item.heading"
+    />
+    <span [attr.aria-label]="item.price" class="text-2xl font-bold"
+      >$ {{ item.price }}</span
+    >
+  </div>
+  <app-text-section
+    [attr.aria-label]="'Ingredients: ' + item.ingredients"
+    [isListItem]="false"
+    [title]="item.ingredients"
+  />
+</div>
+<div *ngFor="let item of getMenu().rightContent">
+  <div class="grid grid-cols-[1fr_auto] gap-4">
+    <app-heading-section
+      [attr.aria-label]="'Flavor: ' + item.heading"
+      class="text-accent-red"
+      [title]="item.heading"
+    />
+    <span [attr.aria-label]="item.price" class="text-2xl font-bold"
+      >$ {{ item.price }}</span
+    >
+  </div>
+  <app-text-section
+    [attr.aria-label]="'Ingredients: ' + item.ingredients"
+    [isListItem]="false"
+    [title]="item.ingredients"
+  />
+</div>
