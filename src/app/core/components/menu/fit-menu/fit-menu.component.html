@@ -5,7 +5,7 @@
       class="text-accent-red"
       [title]="item.heading"
     />
-    <span [attr.aria-label]="item.price" class="text-2xl font-bold"
+    <span [attr.aria-label]="'Price: ' + item.price" class="text-2xl font-bold"
       >$ {{ item.price }}</span
     >
   </div>
@@ -22,7 +22,7 @@
       class="text-accent-red"
       [title]="item.heading"
     />
-    <span [attr.aria-label]="item.price" class="text-2xl font-bold"
+    <span [attr.aria-label]="'Price: ' + item.price" class="text-2xl font-bold"
       >$ {{ item.price }}</span
     >
   </div>
