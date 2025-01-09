@@ -1,23 +1,21 @@
 <section
-  class="flex h-full w-full flex-col items-center justify-center gap-8 bg-shadow p-8 sm:p-20 lg:gap-20"
+  class="flex h-full w-full flex-col items-center justify-center gap-8 bg-shadow px-8 py-20 lg:px-20"
 >
   <app-heading-section
     [attr.aria-label]="'Promotion section'"
     class="text-accent-green"
     [title]="heading[0]"
   />
-  <div
-    class="mb-2 grid h-full items-center justify-center lg:m-0 lg:grid-cols-2"
-  >
+  <div class="grid h-full items-center justify-center lg:m-0 lg:grid-cols-2">
     <img
-      class="hidden h-small w-full rounded-lg bg-cover object-cover shadow-lg lg:block"
+      class="hidden h-full w-full rounded-lg bg-cover object-cover shadow-lg lg:block"
       src="./promotion.jpeg"
       alt="Pepperoni pizza"
     />
     <article
       class="grid place-self-center rounded-lg bg-background/10 p-8 text-background backdrop-blur-md lg:rounded-l-none"
     >
-      <app-heading-section class="text-accent-red" [title]="heading[1]" />
+      <app-heading-section class="text-accent-green" [title]="heading[1]" />
       <app-text-section
         [attr.aria-label]="subheading"
         [isListItem]="false"
