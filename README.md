@@ -37,8 +37,8 @@ Any information shared through this simulated order would be confidentially forw
 :heavy_check_mark: **Feature 1**: Inform your name.\
 :heavy_check_mark: **Feature 2**: Inform your address and any additional information.\
 :heavy_check_mark: **Feature 3**: Select your pizza flavor.\
-:heavy_check_mark: **Feature 4**: If choosing 'Personal-sized' it will indicate that the victim is alone, otherwise, the victim is accompanied.\
-:heavy_check_mark: **Feature 5**: If choosing 'Yes' for cutlery, it will indicate that there are dangerous material in that environment.\
+:heavy_check_mark: **Feature 4**: 'Personal-sized' indicates the victim is alone; otherwise, they are accompanied.\
+:heavy_check_mark: **Feature 5**: 'Yes' for cutlery signals the presence of dangerous materials.\
 :heavy_check_mark: **Feature 6**: Your report has been made, and your information will be forwarded to the police.
 
 ## :rocket: Technologies
