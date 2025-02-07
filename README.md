@@ -48,12 +48,12 @@ Any information shared through this simulated order would be confidentially forw
 
 ## :sparkles: Features
 
-:heavy_check_mark: **Feature 1**: Inform your name;\
-:heavy_check_mark: **Feature 2**: Inform your address and any additional information;\
-:heavy_check_mark: **Feature 3**: Select your pizza flavor;\
-:heavy_check_mark: **Feature 4**: If choosing 'Personal-sized' it will indicate that the victim is alone, otherwise, the victim is accompanied;\
-:heavy_check_mark: **Feature 5**: If choosing 'Yes' for cutlery, it will indicate that there are dangerous material in that environment;\
-:heavy_check_mark: **Feature 6**: Your report has been made, and your information will be forwarded to the police;
+:heavy_check_mark: **Feature 1**: Inform your name.\
+:heavy_check_mark: **Feature 2**: Inform your address and any additional information.\
+:heavy_check_mark: **Feature 3**: Select your pizza flavor.\
+:heavy_check_mark: **Feature 4**: If choosing 'Personal-sized' it will indicate that the victim is alone, otherwise, the victim is accompanied.\
+:heavy_check_mark: **Feature 5**: If choosing 'Yes' for cutlery, it will indicate that there are dangerous material in that environment.\
+:heavy_check_mark: **Feature 6**: Your report has been made, and your information will be forwarded to the police.
 
 ## :rocket: Technologies
 
@@ -75,7 +75,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 # Clone this project
 $ git clone https://github.com/wilsonsouto/pizzeria-donna
 
-# Access
+# Access the project folder
 $ cd pizzeria-donna
 
 # Install dependencies
