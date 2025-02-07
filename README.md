@@ -10,21 +10,7 @@
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/wilsonsouto/pizzeria-donna?color=56BEB8">
 
   <img alt="License" src="https://img.shields.io/github/license/wilsonsouto/pizzeria-donna?color=56BEB8">
-
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/wilsonsouto/pizzeria-donna?color=56BEB8" /> -->
-
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/wilsonsouto/pizzeria-donna?color=56BEB8" /> -->
-
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/wilsonsouto/pizzeria-donna?color=56BEB8" /> -->
 </p>
-
-<!-- Status -->
-
-<!-- <h4 align="center">
-	🚧  Pizzeria Donna 🚀 Under construction...  🚧
-</h4>
-
-<hr> -->
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -91,7 +77,7 @@ $ npm start
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
 
-Made with :heart: by <a href="https://github.com/wilsonsouto" target="_blank">wilsonsouto</a>
+Made with :heart: by [wilsonsouto](https://github.com/wilsonsouto)
 
 &#xa0;
 
