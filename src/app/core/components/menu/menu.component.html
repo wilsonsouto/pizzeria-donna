@@ -13,7 +13,7 @@
 <nav [attr.aria-label]="'Pizza Types'">
   <ul class="flex flex-wrap items-center justify-center gap-8">
     <app-text-section
-      class="flex-1 cursor-pointer rounded-lg border p-4 transition-all hover:bg-accent-red hover:text-background"
+      class="hover:bg-accent-red hover:text-background flex-1 cursor-pointer rounded-lg border p-4 transition-all"
       [isListItem]="true"
       *ngFor="let item of menu; let i = index"
       [attr.aria-label]="item"

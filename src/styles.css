@@ -1,5 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url("https://fonts.cdnfonts.com/css/apercu");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap')
+layer(base);
+@import url('https://fonts.cdnfonts.com/css/apercu') layer(base);
+@import 'tailwindcss';
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #111111;
+
+  --color-accent-green: #228b22;
+  --color-accent-red: #cd212a;
+
+  --background-color-shadow: rgba(0, 0, 0, 0.8);
+
+  --font-apercu: Apercu, sans-serif;
+  --font-lobster: Lobster, cursive;
+
+  --height-large: 800px;
+  --height-small: 500px;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
