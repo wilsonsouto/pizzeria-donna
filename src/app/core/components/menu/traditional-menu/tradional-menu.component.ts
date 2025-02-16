@@ -5,10 +5,9 @@ import { HeadingSectionComponent } from '@app/shared/components/heading-section/
 import { TextSectionComponent } from '@app/shared/components/text-section/text-section.component';
 
 @Component({
-  selector: 'app-traditional-menu',
-  standalone: true,
-  imports: [CommonModule, HeadingSectionComponent, TextSectionComponent],
-  templateUrl: './traditional-menu.component.html',
+    selector: 'app-traditional-menu',
+    imports: [CommonModule, HeadingSectionComponent, TextSectionComponent],
+    templateUrl: './traditional-menu.component.html'
 })
 export class TraditionalMenuComponent {
   public getMenu() {

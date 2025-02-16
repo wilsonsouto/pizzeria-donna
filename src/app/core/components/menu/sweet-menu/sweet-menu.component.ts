@@ -5,10 +5,9 @@ import { TextSectionComponent } from '@app/shared/components/text-section/text-s
 import { Menu } from '@app/shared/interfaces/menu';
 
 @Component({
-  selector: 'app-sweet-menu',
-  standalone: true,
-  imports: [CommonModule, HeadingSectionComponent, TextSectionComponent],
-  templateUrl: './sweet-menu.component.html',
+    selector: 'app-sweet-menu',
+    imports: [CommonModule, HeadingSectionComponent, TextSectionComponent],
+    templateUrl: './sweet-menu.component.html'
 })
 export class SweetMenuComponent {
   getMenu() {

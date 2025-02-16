@@ -4,10 +4,9 @@ import { HeadingSectionComponent } from '@app/shared/components/heading-section/
 import { TextSectionComponent } from '@app/shared/components/text-section/text-section.component';
 
 @Component({
-  selector: 'app-services',
-  standalone: true,
-  imports: [CommonModule, HeadingSectionComponent, TextSectionComponent],
-  templateUrl: './services.component.html',
+    selector: 'app-services',
+    imports: [CommonModule, HeadingSectionComponent, TextSectionComponent],
+    templateUrl: './services.component.html'
 })
 export class ServicesComponent {
   heading: string[] = [
