@@ -3,10 +3,9 @@ import { HeadingSectionComponent } from '@app/shared/components/heading-section/
 import { TextSectionComponent } from '../../../shared/components/text-section/text-section.component';
 
 @Component({
-  selector: 'app-promotion',
-  standalone: true,
-  imports: [HeadingSectionComponent, TextSectionComponent],
-  templateUrl: './promotion.component.html',
+    selector: 'app-promotion',
+    imports: [HeadingSectionComponent, TextSectionComponent],
+    templateUrl: './promotion.component.html'
 })
 export class PromotionComponent {
   heading: string[] = ['Weekly Promotion', 'Pepperoni Classic'];
