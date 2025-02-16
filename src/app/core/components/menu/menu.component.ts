@@ -5,13 +5,12 @@ import { SpecialMenuComponent } from '@app/core/components/menu/special-menu/spe
 import { SweetMenuComponent } from '@app/core/components/menu/sweet-menu/sweet-menu.component';
 import { HeadingSectionComponent } from '@app/shared/components/heading-section/heading-section.component';
 import { TextSectionComponent } from '@app/shared/components/text-section/text-section.component';
-import { TraditionalMenuComponent } from './traditional-menu/tradional-menu.component';
+import { TraditionalMenuComponent } from '@app/core/components/menu/traditional-menu/tradional-menu.component';
 
 @Component({
-  selector: 'app-menu',
-  standalone: true,
-  imports: [CommonModule, NgSwitch, HeadingSectionComponent, TextSectionComponent, TraditionalMenuComponent, SpecialMenuComponent, SweetMenuComponent, FitMenuComponent],
-  templateUrl: './menu.component.html',
+    selector: 'app-menu',
+    imports: [CommonModule, NgSwitch, HeadingSectionComponent, TextSectionComponent, TraditionalMenuComponent, SpecialMenuComponent, SweetMenuComponent, FitMenuComponent],
+    templateUrl: './menu.component.html'
 })
 export class MenuComponent {
   private readonly traditional = new TraditionalMenuComponent();

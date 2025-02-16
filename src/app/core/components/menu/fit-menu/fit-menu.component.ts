@@ -5,10 +5,9 @@ import { TextSectionComponent } from '@app/shared/components/text-section/text-s
 import { Menu } from '@app/shared/interfaces/menu';
 
 @Component({
-  selector: 'app-fit-menu',
-  standalone: true,
-  imports: [CommonModule, HeadingSectionComponent, TextSectionComponent],
-  templateUrl: './fit-menu.component.html',
+    selector: 'app-fit-menu',
+    imports: [CommonModule, HeadingSectionComponent, TextSectionComponent],
+    templateUrl: './fit-menu.component.html'
 })
 export class FitMenuComponent {
   getMenu() {
